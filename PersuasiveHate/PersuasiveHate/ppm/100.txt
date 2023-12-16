@@ -1,0 +1,82 @@
+DATASET : ppm
+FEW_SHOT : False
+FINE_GRIND : False
+NUM_SHOTS : 16
+MODEL : pbm
+UNIMODAL : False
+DATA : ../data
+CAPTION_PATH : ../caption
+RESULT : ./result
+FEAT_DIM : 2048
+CLIP_DIM : 512
+BERT_DIM : 768
+ROBERTA_DIM : 1024
+NUM_FOLD : 5
+EMB_DIM : 300
+NUM_LABELS : 2
+POS_WORD : good
+NEG_WORD : bad
+DEM_SAMP : False
+SIM_RATE : 0.5
+IMG_RATE : 0.5
+TEXT_RATE : 0.5
+CLIP_CLEAN : False
+MULTI_QUERY : True
+NUM_QUERIES : 4
+EMB_DROPOUT : 0.0
+FC_DROPOUT : 0.4
+WEIGHT_DECAY : 0.01
+LR_RATE : 1.3e-05
+EPS : 1e-08
+BATCH_SIZE : 16
+FIX_LAYERS : 2
+MID_DIM : 512
+NUM_HIDDEN : 512
+LENGTH : 64
+TOTAL_LENGTH : 256
+PREFIX_LENGTH : 10
+NUM_SAMPLE : 1
+NUM_LAYER : 8
+MODEL_NAME : roberta-large
+PRETRAIN_DATA : conceptual
+IMG_VERSION : clean
+MAPPING_TYPE : transformer
+ADD_ENT : False
+ADD_DEM : False
+DEBUG : False
+SAVE : False
+SAVE_NUM : 100
+EPOCHS : 10
+SEED : 1111
+CUDA_DEVICE : 15
+WARM_UP : 2000
+TRANS_LAYER : 1
+NUM_HEAD : 8
+Length of training set: 4799, length of testing set: 1199
+Epoch 0
+	train_loss: 376.44, accuracy: 94.39
+	evaluation auc: 59.30, accuracy: 81.07
+Epoch 1
+	train_loss: 109.01, accuracy: 95.04
+	evaluation auc: 72.02, accuracy: 81.15
+Epoch 2
+	train_loss: 79.29, accuracy: 96.62
+	evaluation auc: 77.59, accuracy: 83.40
+Epoch 3
+	train_loss: 51.84, accuracy: 97.56
+	evaluation auc: 80.87, accuracy: 84.15
+Epoch 4
+	train_loss: 28.32, accuracy: 98.65
+	evaluation auc: 80.10, accuracy: 84.07
+Epoch 5
+	train_loss: 16.92, accuracy: 99.15
+	evaluation auc: 80.70, accuracy: 84.74
+Epoch 6
+	train_loss: 9.48, accuracy: 99.50
+	evaluation auc: 80.71, accuracy: 84.90
+Epoch 7
+	train_loss: 3.63, accuracy: 99.83
+	evaluation auc: 79.58, accuracy: 84.99
+Epoch 8
+	train_loss: 2.65, accuracy: 99.94
+	evaluation auc: 80.49, accuracy: 84.99
